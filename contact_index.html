@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Responsive Contact us Form | CodingNepal</title>
+      <link rel="stylesheet" href="contact_style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+
+
+    <div class="container">
+        <div class="text">CONTACT US AT DUCATI</div>
+        <form action="#">
+           <div class="form-row">
+              <div class="input-data">
+                 <input id="firstName" type="text" required>
+                 <div class="underline"></div>
+                 <label for="firstName">First Name</label>
+              </div>
+              <div class="input-data">
+                 <input id="lastName" type="text" required>
+                 <div class="underline"></div>
+                 <label for="lastName">Last Name</label>
+              </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data">
+                 <input id="email" type="text" required>
+                 <div class="underline"></div>
+                 <label for="email">Email Address</label>
+              </div>
+              <div class="input-data">
+                 <input id="address" type="text" required>
+                 <div class="underline"></div>
+                 <label for="address">Address</label>
+              </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data textarea">
+                 <textarea id="message" rows="8" cols="80" required></textarea>
+                 <br />
+                 <div class="underline"></div>
+                 <label for="message">Write your message</label>
+                 <br />
+                 <div class="form-row submit-btn">
+                    <div class="input-data">
+                       <div class="inner"></div>
+                       <input type="submit" onclick="lets(event)" value="submit">
+                    </div>
+                    <div class="input-data">
+                     <div class="inner"></div>
+                     <input type="submit" onclick="back()" value="BACK">
+                  </div> 
+                 </div>
+                
+                 
+                 
+                 
+              </div>
+           </div>
+        </form>
+     </div>
+
+
+
+   <script>
+      function lets(event) {
+         // Check if all text areas are filled
+         var firstName = document.getElementById("firstName").value;
+         var lastName = document.getElementById("lastName").value;
+         var email = document.getElementById("email").value;
+         var address = document.getElementById("address").value;
+         var message = document.getElementById("message").value;
+
+         if (firstName !== "" && lastName !== "" && email !== "" && address !== "" && message !== "") {
+            alert("Thank you for reaching out to us!");
+         }
+
+         else if (firstName == "" || lastName == "" || email == "" || address == "" || message == "") {
+            alert("Please fill up all information!");
+         }
+      }
+
+      function back() {
+         location.replace("index.html");
+      }
+   </script>
+   </body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    <title>VERSION 2 WST FINALS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    
+    <!---HEADER SECTION-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+    <nav class="navbar">
+        <div class="content">
+            
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-raw.png" alt="ducati_logo" id="home"></a>
+            </div>
+
+            <ul class="menu-list">
+
+                <div class="icon cancel-btn">
+                    <i class="fa fa-times"></i>
+                </div>
+
+                <li><a href="#">HOME</a></li>
+                <li><a href="#showroom">SHOWROOM</a></li>
+                <li><a href="#servicearea">SERVICES</a></li>
+                <li><a href="#dealer">DEALERSHIP</a></li>
+                <li><a href="contact_index.html">CONTACT</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="header">
+        
+        <div class="text-box">
+            <h1>World's Best Superbikes</h1>
+            <p>Ducati is an Italian motorcycle-manufacturing company that is part of the Ducati group, and is headquartered in Bologna, Italy.<br> 
+            The company is directly owned by Italian automotive manufacturer Lamborghini, whose German parent company is Audi, <br>
+            itself owned by the Volkswagen Group.</p>
+            <p>DISCLAIMER: THIS IS NOT THE OFFICIAL DUCATI WEBSITE<br>
+            THIS WEBSITE WAS CREATED AS A SCHOOL PROJECT<br>
+            CLICK THE BUTTON BELOW TO GO TO THE OFFICIAL DUCATI WEBSITE
+            </p>
+            <a href="https://www.ducati.com/ww/en/home" class="hero-btn">OFFICIAL DUCATI WEBSITE</a>
+
+        </div>
+
+        </div>
+    </section>
+
+
+    <!--SHOWROOM SECTION-->
+    <section class="bodyshowroom">
+        <h1 id="showroom">DUCATI SHOWROOM</h1>
+        
+        <div class="text-box">
+            <p></p>
+        </div>
+        <div class="container">
+            <div class="box">
+              <img src="images/streetfighter.png" onclick="openModelStreetfighter()">
+              <span>STREETFIGHTER</span>
+            </div>
+            <div class="box">
+              <img src="images/super.jpeg" onclick="openModelPanigale()">
+              <span>PANIGALE</span>
+            </div>
+            <div class="box">
+              <img src="images/monster.png" onclick="openModelMonster()">
+              <span>MONSTER</span>
+            </div>
+            <div class="box">
+              <img src="images/multistrada.png"  onclick="openModelMultistrada()">
+              <span>MULTISTRADA</span>
+            </div>
+          </div>
+
+    </section>
+
+    <!--DISCOVER POPUP-->
+        <!--STREETFIGHTER-->
+        <section class="purchase_streetfighter">
+            <div id="modelBoxStreetfighter">
+                <video width="320" height="240" autoplay muted loop>
+                    <source src="images/streetfighterfinal.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+
+
+                <div class="offer-text">
+                   <h2>Streetfighter V4</h2> 
+                   <small>Price: ₱1,955,000.00-₱2,640,000.00</small>
+                   <p>
+                    Engine Size: 1103 cc<br>
+                    Engine Type: Liquid-cooled,<br>Desmosedici Stradale 90-degree V4<br>
+                    Number of Cylinder: 4<br>
+                    Number of Valve: 8<br>
+                    Transmission: 6-speed manual
+                    </p>
+
+                    <form>
+                        <input type="email" id="email" placeholder="Email Address">
+                        <button type="button" onclick="closeModelStreetfighterMessage()">REQUEST RESERVATION</button>
+                    </form>
+                </div>
+                <img src="images/close.png" class="close-icon" onclick="closeModelStreetfighter()">
+            </div>
+        </section>
+
+
+        <!---PANIGALE-->
+        <section class="purchase_panigale">
+            <div id="modelBoxPanigale">
+                <video width="320" height="240" autoplay muted loop>
+                    <source src="images/hero_1918.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                <div class="offer-text">
+                   <h2>Panigale V4 R</h2> 
+                   <small>Price: P3,299,000</small>
+                   <p>
+                    Engine: 998 Desmosedici Stradale<br>90-degree V4 engine<br>
+                    Power: 221 HP<br>
+                    Torque: 83 lbs-ft<br>
+                    Dry Weight: 379 lbs (172 kg)<br>
+                    Seat Height: 32.7 in (830 mm)
+                    
+                    </p>
+
+                    <form>
+                        <input type="email" id="emailpanigale" placeholder="Email Address">
+                        <button type="button" onclick="closeModelPanigaleMessage()">REQUEST RESERVATION</button>
+                    </form>
+                </div>
+                <img src="images/close.png" class="close-icon" onclick="closeModelPanigale()">
+            </div>
+        </section>
+
+        <!--MONSTER-->
+        <section class="purchase_monster">
+            <div id="modelBoxMonster">
+                <video width="320" height="240" autoplay muted loop>
+                    <source src="images/monster.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                <div class="offer-text">
+                   <h2>Monster</h2> 
+                   <small>Price: P1,045,000</small>
+                   <p>
+                    Engine: 937cc Testastrella 11 Degrees<br>
+                    Power: 112.54 PS @ 9250rpm<br>
+                    Torque: 93.16Nm @ 6500rpm<br>
+                    Dry Weight: 365 lbs (166 kg)<br>
+                    Seat Height: 33.07 in (840 mm)
+                    
+                    </p>
+
+                    <form>
+                        <input type="email" id="emailmonster" placeholder="Email Address">
+                        <button type="button"  onclick="closeModelMonsterMessage()">REQUEST RESERVATION</button>
+                    </form>
+                </div>
+                <img src="images/close.png" class="close-icon" onclick="closeModelMonster()">
+            </div>
+        </section>
+
+        <!--MULTISTRADA-->
+        <section class="purchase_Multistrada">
+            <div id="modelBoxMultistrada">
+                <video width="320" height="240" autoplay muted loop>
+                    <source src="images/multistrada.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                <div class="offer-text">
+                   <h2>Multistrada V4</h2> 
+                   <small>Price: ₱2,070,000.00 to ₱2,520,000.00</small>
+                   <p>
+                    Engine: 1,158cc liquid-cooled <br>Granturismo V4 engine<br>
+                    Power:  170 HP<br>
+                    Torque: 92 lbs-ft<br>
+                    Dry Weight: 478 lbs (217 kg)<br>
+                    Seat Height: 33.1 in (840 mm)
+                    
+                    </p>
+
+                    <form>
+                        <input type="email" id="emailmultistrada" placeholder="Email Address">
+                        <button type="button" onclick="closeModelMultistradaMessage()">REQUEST RESERVATION</button>
+                    </form>
+                </div>
+                <img src="images/close.png" class="close-icon" onclick="closeModelMultistrada()">
+            </div>
+        </section>
+
+        
+
+
+    <!--SERVICE SECTION-->
+    <section class="services">
+        <h1 id="servicearea">DUCATI SERVICES</h1>
+        <img src="images/maintenance.jpg">
+        <div class="row">
+            
+            <div class="column">
+                <h2>MAINTENANCE</h2>
+                <p>More mileage, less service, to enjoy your Ducati to the fullest.
+                We extended the intervals for all services, reaching 30,000 km for Desmo Service, 
+                and every day we train our Ducati Service staff for a better and better standard</p>  
+            </div>
+
+            <div class="column">
+                <h2>SERVICE CAMPAIGN</h2>
+                <p>Riding pleasure always at its best: find out about the recall campaigns
+                plans for your motorbike
+                </p>  
+            </div>
+
+            <div class="column">
+                <h2>DOCUMENTATION</h2>
+                <p>Remember that the documentation supplied with your bike contains a lot of useful information: 
+                from the specific colour code, to advice on winter care, or details about key maintenance.</p>  
+            </div>
+    </section>
+
+
+
+    <!--DEALERSHIP MAP-->
+    <section class="dealerships" id="dealer">
+        <h1>DEALERSHIP LOCATIONS</h1>
+        <h2>FIND THE NEAREST DUCATI DEALER</h2>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="75%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1200&amp;height=720&amp;hl=en&amp;q=ducati philippines&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    
+
+ 
+
+
+       <!---ABOUT US SECTION-->
+       <section class="footer" id="footer">
+        <img src="images/footer.svg">
+        <div class="footer-links">
+            <ul>
+                <li><a href="https://my.ducati.com/ww/en/footer/terms-of-use">TERMS OF USE</a></li>
+                <li><a href="https://www.ducati.com/ww/en/home/privacy">PRIVACY INFORMATION</a></li>
+                <li><a href="https://www.ducati.com/ww/en/home/cookie-policy">COOKIES INFORMATION</a></li>
+            </ul>
+        </div>
+        <p>Copyright © 2023 Ducati Motor Holding S.p.A. – 
+        A Sole Shareholder Company. <br> A Company subject to the Management and Coordination activities of AUDI AG. 
+        All rights reserved. VAT 05113870967 <br>The links below are official ducati sites.</p>
+          <div class="icons">
+              <a href="https://www.facebook.com/Ducati" class="fa fa-facebook"></a>
+              <a href="https://www.instagram.com/ducati/?hl=en" class="fa fa-youtube"></a>
+              <a href="https://www.instagram.com/ducati/?hl=en" class="fa fa-instagram"></a>
+              <a href="https://twitter.com/DucatiMotor?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+              <a href="https://www.linkedin.com/company/ducati-philippines" class="fa fa-linkedin"></a>
+              
+              
+          </div> 
+        </section>
+
+    <!----JAVASCRIPT-->
+    <script>
+
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        
+        menuBtn.onclick = ()=>{
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+        }
+
+        cancelBtn.onclick = ()=>{
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+        }
+
+        window.onscroll = ()=>{
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky"); 
+        }
+
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        
+
+        //TOGGLE MENU
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        
+        
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+
+
+            // MOTORCYCLE POPUPS
+            function closeModelStreetfighter(){
+                modelBoxStreetfighter.style.display = "none";
+            }
+
+            function closeModelStreetfighterMessage(){
+                var email = document.getElementById("email").value;
+
+                if(email !== "")
+                {
+                    alert("Reservation Request Sent!");
+                    modelBoxStreetfighter.style.display = "none";
+                }
+                
+                else
+                {
+                    alert("Please enter a proper email!");   
+                }
+            }
+
+            function openModelStreetfighter(){
+                modelBoxStreetfighter.style.display = "block";
+            }
+            
+            
+
+            function closeModelPanigale(){
+                modelBoxPanigale.style.display = "none";
+            }
+
+            function openModelPanigale(){
+                modelBoxPanigale.style.display = "block";
+            }
+            
+            function closeModelPanigaleMessage(){
+                var email = document.getElementById("emailpanigale").value;
+
+                if(email !== "")
+                {
+                    alert("Reservation Request Sent!");
+                    modelBoxPanigale.style.display = "none";
+                }
+                
+                else
+                {
+                    alert("Please enter a proper email!");   
+                }
+            }
+
+            function closeModelMonster(){
+                modelBoxMonster.style.display = "none";
+            }
+
+            function openModelMonster(){
+                modelBoxMonster.style.display = "block";
+            }
+
+            function closeModelMonsterMessage(){
+                var email = document.getElementById("emailmonster").value;
+
+                if(email !== "")
+                {
+                    alert("Reservation Request Sent!");
+                    modelBoxMonster.style.display = "none";
+                }
+                
+                else
+                {
+                    alert("Please enter a proper email!");   
+                }
+            }
+
+            function closeModelMultistrada(){
+                modelBoxMultistrada.style.display = "none";
+            }
+
+            function openModelMultistrada(){
+                modelBoxMultistrada.style.display = "block";
+            }
+
+
+            function closeModelMultistradaMessage(){
+                var email = document.getElementById("emailmultistrada").value;
+
+                if(email !== "")
+                {
+                    alert("Reservation Request Sent!");
+                    modelBoxMultistrada.style.display = "none";
+                }
+                
+                else
+                {
+                    alert("Please enter a proper email!");   
+                }
+            }
+
+         
+            
+    </script>
+    
+</body>
+</html>
